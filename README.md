@@ -7,14 +7,10 @@ Text genie is a React application that generates random text based on a dataset 
 
 ## 🚀 Features
 
-- ✏️ Create, edit, and delete tasks 
-- 📅 Set due dates/deadlines for all task
-- 📂 sorted tasked based on priority
-- 🌈 Different colored tasks based on priority
-- 🎨 Super clean UI based on Figma UI provided by the club
-- 🌓 Easy to switch dark and light theme
-- ❌ react-hot-toast for error warnings
-- 🧮 gives totals number of tasks to be done
+- ✏️ generate random text
+- 📅 set the number of words for the random text
+- 🌈 praticle js library for interactive background
+- 🎨 Super clean UI.
 
 
 
