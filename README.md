@@ -1,4 +1,5 @@
-# 📋 Text Genie   ## random text generator
+# 📋 Text Genie   
+## random text generator
 
 ## 📝 Description
 
