@@ -1,4 +1,5 @@
-# 📋 Task Website
+# 📋 Text Genie
+-random text generator
 
 ## 📝 Description
 
