@@ -24,18 +24,15 @@ Check out Textgenie in action on different devices:
 
 ### Mobile View
 
-<img src="https://user-images.githubusercontent.com/91087103/227054572-a703d51e-426c-4986-922c-21a256fc132a.png
-" alt="Taskmate mobile view" width="300">
+<img src="https://user-images.githubusercontent.com/91087103/227054572-a703d51e-426c-4986-922c-21a256fc132a.png" alt="Textgenie mobile view" width="300">
 
 ### Tablet View
 
-<img src="https://user-images.githubusercontent.com/91087103/227054646-8273bf03-a813-4ced-838d-748da45f79ef.png
-" alt="Taskmate tablet view" width="600">
+<img src="https://user-images.githubusercontent.com/91087103/227054646-8273bf03-a813-4ced-838d-748da45f79ef.png" alt="Textgenie tablet view" width="600">
 
 ### Desktop View
 
-<img src="https://user-images.githubusercontent.com/91087103/227054697-ee451db6-99db-4fcd-9ee7-c9144bf35b8b.png
-" alt="Taskmate desktop view" width="800">
+<img src="https://user-images.githubusercontent.com/91087103/227054697-ee451db6-99db-4fcd-9ee7-c9144bf35b8b.png" alt="Textgenie desktop view" width="800">
 
 
 ## 🛠️ Technologies Used
