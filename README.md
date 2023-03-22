@@ -44,7 +44,7 @@ Check out Textgenie in action on different devices:
 
 ## 📥 Live Demo
 
-- visit :-https://dashing-basbousa-1f450f.netlify.app/
+- visit :-https://textgenie9026.netlify.app/
 
 
 
