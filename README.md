@@ -11,7 +11,8 @@ Text genie is a React application that generates random text based on a dataset 
 - 📅 set the number of words for the random text
 - 🌈 praticle js library for interactive background
 - 🎨 Super clean UI.
-
+- 😍 generate a random sentence upto 100 words
+- 
 
 
 ## 📷 Textgenie in Action
