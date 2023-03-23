@@ -19,7 +19,7 @@ function App() {
   const getRandomText = (wordCount) => {
     const randomIndex = Math.floor(Math.random() * data.length);
     const text = data[randomIndex].body.trim();
-    const words = text.split(/\s+/); // Split text by any whitespace character
+    const words = text.split(/\s+/); 
     const shuffledWords = shuffleArray(words);
     const repeatedWords = [];
     while (repeatedWords.length < wordCount) {
@@ -29,7 +29,7 @@ function App() {
     return truncatedWords.join(' ');
   };
   
-// Helper function to shuffle an array using the Fisher-Yates algorithm
+
 const shuffleArray = (arr) => {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
