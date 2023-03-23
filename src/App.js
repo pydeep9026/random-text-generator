@@ -4,11 +4,11 @@ import data from "./data.json";
 import particles from "./particles";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   const [randomText, setRandomText] = useState("");
-  const [wordCount, setWordCount] = useState(20);
+  const [wordCount, setWordCount] = useState(10);
 
   const handleInit = async (main) => {
     await loadFull(main);
@@ -18,14 +18,35 @@ function App() {
 
   const getRandomText = (wordCount) => {
     const randomIndex = Math.floor(Math.random() * data.length);
-    const text = data[randomIndex].body;
-    const words = text.split(' ');
-    const truncatedWords = words.slice(0, wordCount);
+    const text = data[randomIndex].body.trim();
+    const words = text.split(/\s+/); // Split text by any whitespace character
+    const shuffledWords = shuffleArray(words);
+    const repeatedWords = [];
+    while (repeatedWords.length < wordCount) {
+      repeatedWords.push(...shuffledWords);
+    }
+    const truncatedWords = repeatedWords.slice(0, wordCount);
     return truncatedWords.join(' ');
   };
+  
+// Helper function to shuffle an array using the Fisher-Yates algorithm
+const shuffleArray = (arr) => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
+
+
 
   const generateRandomText = () => {
+    if(wordCount>100){
+      toast.error("word limit for a random text is 100 words")
+    }else{
     setRandomText(getRandomText(wordCount));
+    }
   };
 
   const handleWordCountChange = (event) => {
@@ -36,6 +57,7 @@ function App() {
 
   return (
     <div className='container'>
+      <Toaster/>
       <Particles id="particles" style={{position:"absolute",width:"100%"}} options={particles} init={handleInit} />
       <div className='mainbox'>
         <span className='logogif'></span>
@@ -60,3 +82,4 @@ function App() {
 
 
 export default App;
+
